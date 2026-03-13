@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Hospitals and Emergency Data in Egypt</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    font-family: Cairo, sans-serif;
+    background: linear-gradient(140deg,#0b2545,#134074,#1e6091,#3a86ff);
+    min-height: 100vh;
+    padding: 30px;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: .3s;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.12);
+}
+
+.region {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.landmark {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column; /* each item takes full line */
+    gap: 4px;
+    background: rgba(255,255,255,.05);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.address {
+    font-weight: 500;
+}
+
+.phone {
+    color: #9fd3ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.phone:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="title">Hospitals and Emergency Data in Egypt</div>
+
+<div class="container">
+
+<!-- Cairo and Giza - Giza Pyramids and Sphinx -->
+<div class="card">
+<div class="region">Cairo and Giza</div>
+<div class="landmark">Giza Pyramids and Sphinx</div>
+<div class="info">
+    <div class="row">
+        <div class="address">Hospital: Al-Haram Hospital (Oula Al-Haram, Giza)</div>
+        <a class="phone" href="tel:0233860236">0233860236</a>
+    </div>
+    <div class="row">
+        <div class="address">Hospital: Pyramids Specialized Hospital (48 Al-Haram Street)</div>
+        <a class="phone" href="tel:01080002727">01080002727</a>
+    </div>
+    <div class="row">
+        <div class="address">Police Station: Al-Ahram Police Department (covers the surrounding area)</div>
+    </div>
+</div>
+</div>
+
+<!-- Cairo and Giza - Egyptian Museum -->
+<div class="card">
+<div class="region">Cairo and Giza</div>
+<div class="landmark">Egyptian Museum at Tahrir</div>
+<div class="info">
+    <div class="row">
+        <div class="address">Hospital: Ahmed Maher Teaching Hospital (Port Said Street, El-Darb El-Ahmar)</div>
+        <a class="phone" href="tel:0223911838">0223911838</a>
+    </div>
+    <div class="row">
+        <div class="address">Hospital: Police Hospital in Agouza (Agouza, Giza) - phone not directly available but nearby</div>
+    </div>
+    <div class="row">
+        <div class="address">Police Station: Kasr El-Nil Police Department (covers Tahrir Square area)</div>
+    </div>
+</div>
+</div>
+
+<!-- Cairo and Giza - Salah El-Din Citadel -->
+<div class="card">
+<div class="region">Cairo and Giza</div>
+<div class="landmark">Salah El-Din Citadel</div>
+<div class="info">
+    <div class="row">
+        <div class="address">Hospital: Ahmed Maher Teaching Hospital (Port Said Street)</div>
+        <a class="phone" href="tel:0223911838">0223911838</a>
+    </div>
+    <div class="row">
+        <div class="address">Police Station: Khalifa Police Department (covers the citadel area)</div>
+    </div>
+</div>
+</div>
+
+<!-- Cairo and Giza - Khan El-Khalili and Al-Muizz Street -->
+<div class="card">
+<div class="region">Cairo and Giza</div>
+<div class="landmark">Khan El-Khalili and Al-Muizz Street</div>
+<div class="info">
+    <div class="row">
+        <div class="address">Hospital: Al-Hussein Specialized Hospital (Gawhar Al-Qaid Street, El-Darb El-Ahmar)</div>
+        <a class="phone" href="tel:01020186351">01020186351</a>
+    </div>
+    <div class="row">
+        <div class="address">Hospital: Bab Al-Shaariya Hospital (New Al-Sharia Street)</div>
+        <a class="phone" href="tel:0225893754">0225893754</a>
+    </div>
+    <div class="row">
+        <div class="address">Police Station: Al-Gamaliya Police Department (responsible for Khan El-Khalili and Al-Muizz area)</div>
+    </div>
+</div>
+</div>
+
+<!-- Luxor and Aswan - Karnak and Luxor Temples -->
+<div class="card">
+<div class="region">Luxor and Aswan</div>
+<div class="landmark">Karnak and Luxor Temples</div>
+<div class="info">
+    <div class="row">
+        <div class="address">Hospital: Karnak International Hospital (Nile Corniche, Luxor)</div>
+        <a class="phone" href="tel:0952372025">0952372025</a>
+    </div>
+    <div class="row">
+        <div class="address">Hospital: Luxor International Hospital (Television Street)</div>
+        <a class="phone" href="tel:0952277194">0952277194</a>
+    </div>
+    <div class="row">
+        <div class="address">Police Station: Luxor Police Department (located in city center)</div>
+    </div>
+</div>
+</div>
+
+<!-- Luxor and Aswan - Valley of the Kings and Queens -->
+<div class="card">
+<div class="region">Luxor and Aswan</div>
+<div class="landmark">Valley of the Kings and Queens</div>
+<div class="info">
+    <div class="row">
+        <div class="address">Hospital: Luxor International Hospital (Television Street)</div>
+        <a class="phone" href="tel:0952277194">0952277194</a>
+    </div>
+    <div class="row">
+        <div class="address">Police Station: Qurna Police Post (responsible for the West Bank where the tombs are)</div>
+    </div>
+</div>
+</div>
+
+<!-- Luxor and Aswan - Abu Simbel Temples -->
+<div class="card">
+<div class="region">Luxor and Aswan</div>
+<div class="landmark">Abu Simbel Temples (Aswan)</div>
+<div class="info">
+    <div class="row">
+        <div class="address">Hospital: Abu Simbel International Hospital (inside Abu Simbel city)</div>
+    </div>
+    <div class="row">
+        <div class="address">Police Station: Abu Simbel Police Department</div>
+    </div>
+</div>
+</div>
+
+<!-- Alexandria - Library of Alexandria and Qaitbay Citadel -->
+<div class="card">
+<div class="region">Alexandria</div>
+<div class="landmark">Library of Alexandria and Qaitbay Citadel</div>
+<div class="info">
+    <div class="row">
+        <div class="address">Hospital: Ras El-Tin General Hospital (Ras El-Tin, El-Gomrok)</div>
+        <a class="phone" href="tel:034860574">034860574</a>
+    </div>
+    <div class="row">
+        <div class="address">Hospital: Main University Hospital - Al-Mairy (Al-Batalseh Street)</div>
+        <a class="phone" href="tel:034862920">034862920</a>
+    </div>
+    <div class="row">
+        <div class="address">Hospital: Alexandria Police Hospital (next to Carrefour, Desert Road)</div>
+        <a class="phone" href="tel:033681507">033681507</a>
+    </div>
+    <div class="row">
+        <div class="address">Police Station: Bab Sharq Police Department (for the library) and El-Gomrok Police Department (for the citadel)</div>
+    </div>
+</div>
+</div>
+
+<!-- Continue similarly for Red Sea, Sinai, Oases, Coastal, Religious, and Emergency numbers -->
+
+</div>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بيانات المستشفيات والطوارئ في مصر</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body {
+    margin: 0;
+    font-family: Cairo;
+    background: linear-gradient(140deg,#0b2545,#134074,#1e6091,#3a86ff);
+    min-height: 100vh;
+    padding: 30px;
+    color: white;
+}
+
+.title {
+    text-align: center;
+    font-size: 34px;
+    margin-bottom: 40px;
+    font-weight: 600;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 25px;
+    max-width: 1200px;
+    margin: auto;
+    width: 100%;
+}
+
+.card {
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(14px);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: .3s;
+    width: 100%;
+    box-sizing: border-box;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.12);
+}
+
+.region {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.landmark {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.row {
+    display: flex;
+    flex-direction: column; /* كل عنصر ياخد سطر كامل */
+    gap: 4px;
+    background: rgba(255,255,255,.05);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+
+.address {
+    font-weight: 500;
+}
+
+.phone {
+    color: #9fd3ff;
+    text-decoration: none;
+    font-weight: 600;
+}
+.phone:hover {
+    text-decoration: underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="title">بيانات المستشفيات والطوارئ في مصر</div>
+
+<div class="container">
+
+<!-- القاهرة والجيزة - أهرامات الجيزة وأبو الهول -->
+<div class="card">
+<div class="region">القاهرة والجيزة</div>
+<div class="landmark">أهرامات الجيزة وأبو الهول</div>
+<div class="info">
+    <div class="row">
+        <div class="address">المستشفى: مستشفى الهرم (أولى الهرم، الجيزة)</div>
+        <a class="phone" href="tel:0233860236">0233860236</a>
+    </div>
+    <div class="row">
+        <div class="address">المستشفى: مستشفى الأهرامات التخصصي (48 شارع الهرم)</div>
+        <a class="phone" href="tel:01080002727">01080002727</a>
+    </div>
+    <div class="row">
+        <div class="address">قسم الشرطة: قسم شرطة الأهرام (يخدم المنطقة المحيطة)</div>
+    </div>
+</div>
+</div>
+
+<!-- القاهرة والجيزة - المتحف المصري -->
+<div class="card">
+<div class="region">القاهرة والجيزة</div>
+<div class="landmark">المتحف المصري بالتحرير</div>
+<div class="info">
+    <div class="row">
+        <div class="address">المستشفى: مستشفى أحمد ماهر التعليمي (شارع بورسعيد، الدرب الأحمر)</div>
+        <a class="phone" href="tel:0223911838">0223911838</a>
+    </div>
+    <div class="row">
+        <div class="address">المستشفى: مستشفى الشرطة بالعجوزة (العجوزة، الجيزة) - تليفون: غير متوفر مباشرة بالنتائج ولكنها قريبة جغرافياً</div>
+    </div>
+    <div class="row">
+        <div class="address">قسم الشرطة: قسم شرطة قصر النيل (يخدم منطقة ميدان التحرير)</div>
+    </div>
+</div>
+</div>
+
+<!-- القاهرة والجيزة - قلعة صلاح الدين -->
+<div class="card">
+<div class="region">القاهرة والجيزة</div>
+<div class="landmark">قلعة صلاح الدين الأيوبي</div>
+<div class="info">
+    <div class="row">
+        <div class="address">المستشفى: مستشفى أحمد ماهر التعليمي (شارع بورسعيد)</div>
+        <a class="phone" href="tel:0223911838">0223911838</a>
+    </div>
+    <div class="row">
+        <div class="address">قسم الشرطة: قسم شرطة الخليفة (يخدم منطقة القلعة)</div>
+    </div>
+</div>
+</div>
+
+<!-- القاهرة والجيزة - خان الخليلي وشارع المعز -->
+<div class="card">
+<div class="region">القاهرة والجيزة</div>
+<div class="landmark">خان الخليلي وشارع المعز</div>
+<div class="info">
+    <div class="row">
+        <div class="address">المستشفى: مستشفى الحسين التخصصي (شارع جوهر القائد، الدرب الأحمر)</div>
+        <a class="phone" href="tel:01020186351">01020186351</a>
+    </div>
+    <div class="row">
+        <div class="address">المستشفى: مستشفى باب الشعرية (شارع الشريعة الجديد)</div>
+        <a class="phone" href="tel:0225893754">0225893754</a>
+    </div>
+    <div class="row">
+        <div class="address">قسم الشرطة: قسم شرطة الجمالية (المسؤول عن منطقة خان الخليلي والمعز)</div>
+    </div>
+</div>
+</div>
+
+<!-- الأقصر وأسوان - معابد الكرنك والأقصر -->
+<div class="card">
+<div class="region">الأقصر وأسوان</div>
+<div class="landmark">معبد الكرنك ومعبد الأقصر</div>
+<div class="info">
+    <div class="row">
+        <div class="address">المستشفى: مستشفى الكرنك الدولي (كورنيش النيل، الأقصر)</div>
+        <a class="phone" href="tel:0952372025">0952372025</a>
+    </div>
+    <div class="row">
+        <div class="address">المستشفى: مستشفى الأقصر الدولي (شارع التلفزيون)</div>
+        <a class="phone" href="tel:0952277194">0952277194</a>
+    </div>
+    <div class="row">
+        <div class="address">قسم الشرطة: قسم شرطة الأقصر (يقع في وسط المدينة)</div>
+    </div>
+</div>
+</div>
+
+<!-- الأقصر وأسوان - وادي الملوك والملكات -->
+<div class="card">
+<div class="region">الأقصر وأسوان</div>
+<div class="landmark">وادي الملوك والملكات</div>
+<div class="info">
+    <div class="row">
+        <div class="address">المستشفى: مستشفى الأقصر الدولي (شارع التلفزيون)</div>
+        <a class="phone" href="tel:0952277194">0952277194</a>
+    </div>
+    <div class="row">
+        <div class="address">قسم الشرطة: نقطة شرطة القرنة (المسؤولة عن البر الغربي حيث توجد المقابر)</div>
+    </div>
+</div>
+</div>
+
+<!-- الأقصر وأسوان - معابد أبو سمبل -->
+<div class="card">
+<div class="region">الأقصر وأسوان</div>
+<div class="landmark">معابد أبو سمبل (أسوان)</div>
+<div class="info">
+    <div class="row">
+        <div class="address">المستشفى: مستشفى أبو سمبل الدولي (داخل مدينة أبو سمبل)</div>
+    </div>
+    <div class="row">
+        <div class="address">قسم الشرطة: قسم شرطة أبو سمبل</div>
+    </div>
+</div>
+</div>
+
+<!-- الإسكندرية - مكتبة الإسكندرية وقلعة قايتباي -->
+<div class="card">
+<div class="region">الإسكندرية</div>
+<div class="landmark">مكتبة الإسكندرية وقلعة قايتباي</div>
+<div class="info">
+    <div class="row">
+        <div class="address">المستشفى: مستشفى رأس التين العام (رأس التين، الجمرك)</div>
+        <a class="phone" href="tel:034860574">034860574</a>
+    </div>
+    <div class="row">
+        <div class="address">المستشفى: المستشفى الرئيسي الجامعي - الميري (شارع البطالسة)</div>
+        <a class="phone" href="tel:034862920">034862920</a>
+    </div>
+    <div class="row">
+        <div class="address">المستشفى: مستشفى الشرطة بالإسكندرية (بجوار كارفور، الطريق الصحراوي)</div>
+        <a class="phone" href="tel:033681507">033681507</a>
+    </div>
+    <div class="row">
+        <div class="address">قسم الشرطة: قسم شرطة باب شرق (للمكتبة) وقسم شرطة الجمرك (للقلعة)</div>
+    </div>
+</div>
+</div>
+
+<!-- استمر على نفس الأسلوب لبقية البيانات: الشرقي والغربي، الواحات، الشاطئية، الدينية، وأرقام الطوارئ -->
+
+</div>
+</body>
+</html>

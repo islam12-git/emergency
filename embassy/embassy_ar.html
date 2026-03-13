@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>بيانات السفارات</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body{
+    margin:0;
+    font-family:Cairo;
+    background:linear-gradient(140deg,#0b2545,#134074,#1e6091,#3a86ff);
+    min-height:100vh;
+    padding:30px;
+    color:white;
+}
+
+/* العنوان */
+.title{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:40px;
+    font-weight:600;
+}
+
+/* grid */
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+    width:100%;
+}
+
+/* الكارت */
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(14px);
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:.3s;
+    width:100%;
+    box-sizing:border-box;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    background:rgba(255,255,255,0.12);
+}
+
+/* اسم الدولة */
+.country{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+/* العلم */
+.flag{
+    width:50px;
+    height:32px;
+    border-radius:5px;
+    object-fit:cover;
+    box-shadow:0 0 5px rgba(0,0,0,.3);
+}
+
+/* المعلومات */
+.info{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+/* الصف */
+.row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:rgba(255,255,255,.05);
+    padding:12px;
+    border-radius:10px;
+    font-size:15px;
+}
+
+/* الايقونات */
+.icon{
+    width:20px;
+    height:20px;
+    flex-shrink:0;
+}
+
+/* الهاتف */
+.phone{
+    color:#9fd3ff;
+    text-decoration:none;
+    font-weight:600;
+}
+.phone:hover{
+    text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="title">بيانات التواصل مع السفارات</div>
+
+<div class="container">
+
+<!-- السعودية -->
+<div class="card">
+<div class="country">
+<img class="flag" src="https://flagcdn.com/w80/sa.png">السعودية
+</div>
+<div class="info">
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+</svg>
+<span>2 شارع أحمد نسيم – الجيزة</span>
+</div>
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1C9.16 21 3 14.84 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.2 2.52.59 3.66a1 1 0 01-.21 1.11l-2.26 2.02z"/>
+</svg>
+<a class="phone" href="tel:0237749800">02 37749800</a>
+<span>/</span>
+<a class="phone" href="tel:0237744600">02 37744600</a>
+</div>
+</div>
+</div>
+
+<!-- الأردن -->
+<div class="card">
+<div class="country">
+<img class="flag" src="https://flagcdn.com/w80/jo.png">الأردن
+</div>
+<div class="info">
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+</svg>
+<span>6 شارع باسم الكاتب – الدقي، الجيزة</span>
+</div>
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1C9.16 21 3 14.84 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.2 2.52.59 3.66a1 1 0 01-.21 1.11l-2.26 2.02z"/>
+</svg>
+<a class="phone" href="tel:02233354402">02 233354402</a>
+</div>
+</div>
+</div>
+
+<!-- الكويت -->
+<div class="card">
+<div class="country">
+<img class="flag" src="https://flagcdn.com/w80/kw.png">الكويت
+</div>
+<div class="info">
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+</svg>
+<span>قرب فندق فور سيزونز – الجيزة</span>
+</div>
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1C9.16 21 3 14.84 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.2 2.52.59 3.66a1 1 0 01-.21 1.11l-2.26 2.02z"/>
+</svg>
+<a class="phone" href="tel:0235712187">02 35712187</a>
+<span>/</span>
+<a class="phone" href="tel:0235712194">02 35712194</a>
+</div>
+</div>
+</div>
+
+<!-- سلطنة عمان -->
+<div class="card">
+<div class="country">
+<img class="flag" src="https://flagcdn.com/w80/om.png">سلطنة عمان
+</div>
+<div class="info">
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+</svg>
+<span>20 شارع محمد مظهر – الزمالك، القاهرة</span>
+</div>
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1C9.16 21 3 14.84 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.2 2.52.59 3.66a1 1 0 01-.21 1.11l-2.26 2.02z"/>
+</svg>
+<a class="phone" href="tel:0227350792">02 27350792</a>
+<span>/</span>
+<a class="phone" href="tel:0227289971">02 27289971</a>
+</div>
+</div>
+</div>
+
+<!-- قطر -->
+<div class="card">
+<div class="country">
+<img class="flag" src="https://flagcdn.com/w80/qa.png">قطر
+</div>
+<div class="info">
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+</svg>
+<span>10 شارع الثمار – المهندسين، الجيزة</span>
+</div>
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1C9.16 21 3 14.84 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.2 2.52.59 3.66a1 1 0 01-.21 1.11l-2.26 2.02z"/>
+</svg>
+<a class="phone" href="tel:0237604312">02 37604312</a>
+<span>/</span>
+<a class="phone" href="tel:0237604693">02 37604693</a>
+</div>
+</div>
+</div>
+
+<!-- العراق -->
+<div class="card">
+<div class="country">
+<img class="flag" src="https://flagcdn.com/w80/iq.png">العراق
+</div>
+<div class="info">
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+</svg>
+<span>1 شارع عبد المنعم رياض – المهندسين، الجيزة</span>
+</div>
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1C9.16 21 3 14.84 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.2 2.52.59 3.66a1 1 0 01-.21 1.11l-2.26 2.02z"/>
+</svg>
+<a class="phone" href="tel:0237622732">02 37622732</a>
+<span>/</span>
+<a class="phone" href="tel:0237622731">02 37622731</a>
+</div>
+</div>
+</div>
+
+<!-- سوريا -->
+<div class="card">
+<div class="country">
+<img class="flag" src="https://flagcdn.com/w80/sy.png">سوريا
+</div>
+<div class="info">
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+</svg>
+<span>18 شارع عبد الرحيم – الدقي، الجيزة</span>
+</div>
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1C9.16 21 3 14.84 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.2 2.52.59 3.66a1 1 0 01-.21 1.11l-2.26 2.02z"/>
+</svg>
+<a class="phone" href="tel:0233358805">02 33358805</a>
+<span>/</span>
+<a class="phone" href="tel:0227495124">02 27495124</a>
+</div>
+</div>
+</div>
+
+<!-- أفغانستان -->
+<div class="card">
+<div class="country">
+<img class="flag" src="https://flagcdn.com/w80/af.png">أفغانستان
+</div>
+<div class="info">
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+</svg>
+<span>59 شارع العروبة – مصر الجديدة</span>
+</div>
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1C9.16 21 3 14.84 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.2 2.52.59 3.66a1 1 0 01-.21 1.11l-2.26 2.02z"/>
+</svg>
+<a class="phone" href="tel:024177236">24177236</a>
+</div>
+</div>
+</div>
+
+<!-- الجزائر -->
+<div class="card">
+<div class="country">
+<img class="flag" src="https://flagcdn.com/w80/dz.png">الجزائر
+</div>
+<div class="info">
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+</svg>
+<span>14 شارع البرازيل – الزمالك</span>
+</div>
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1C9.16 21 3 14.84 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.2 2.52.59 3.66a1 1 0 01-.21 1.11l-2.26 2.02z"/>
+</svg>
+<a class="phone" href="tel:027361520">27361520</a>
+<span>/</span>
+<a class="phone" href="tel:027368527">27368527</a>
+</div>
+</div>
+</div>
+
+<!-- وهكذا لبقية السفارات … -->
+
+</div>
+</body>
+</html>

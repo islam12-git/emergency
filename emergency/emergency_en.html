@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tourist Emergency Instructions</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+<style>
+body{
+    margin:0;
+    font-family:Poppins,Arial;
+    background:linear-gradient(140deg,#0b2545,#134074,#1e6091,#3a86ff);
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    color:white;
+    padding:20px;
+}
+
+/* Title */
+.title{
+    font-size:34px;
+    font-weight:600;
+    margin:30px 0;
+    text-align:center;
+}
+
+/* Container */
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:30px;
+    width:100%;
+    max-width:1200px;
+    justify-items:center;
+}
+
+/* Card */
+.card{
+    width:100%;
+    max-width:360px;
+    background:rgba(255,255,255,0.07);
+    border-radius:25px;
+    backdrop-filter:blur(12px);
+    box-shadow:0 0 30px rgba(0,0,0,0.45);
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    font-size:16px;
+    font-weight:400;
+    cursor:pointer;
+    transition:0.3s;
+    padding:20px;
+    max-height:600px;
+    overflow-y:auto;
+}
+
+.card:hover{
+    transform:translateY(-5px) scale(1.02);
+    background:rgba(255,255,255,0.12);
+}
+
+/* Optional image */
+.card img{
+    width:100%;
+    max-width:300px;
+    height:200px;
+    object-fit:cover;
+    border-radius:15px;
+    margin-bottom:15px;
+}
+
+/* Heading */
+.card h3{
+    font-size:18px;
+    font-weight:600;
+    margin-bottom:10px;
+}
+
+/* Instructions */
+.card ol{
+    list-style-type: decimal;
+    direction: rtl; /* numbers on the right */
+    text-align: right;
+    padding-right: 20px;
+    padding-left: 0;
+}
+
+.card li{
+    margin-bottom:8px;
+    line-height:1.5;
+}
+
+/* Mobile */
+@media (max-width:768px){
+    .title{
+        font-size:26px;
+        margin-bottom:20px;
+    }
+    .card{
+        max-height:500px;
+        font-size:14px;
+    }
+    .card img{
+        width:90%;
+        height:150px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="title">Tourist Emergency Instructions</div>
+
+<div class="container">
+
+<!-- Case 1 -->
+<div class="card">
+    <h3>Sudden Health Emergency (Fainting – Shock – Allergy – Injury)</h3>
+    <ol>
+        <li>Ensure the place is safe for the victim.</li>
+        <li>Call the ambulance immediately (local emergency number).</li>
+        <li>Do not give any medication unless you know the person takes it.</li>
+        <li>If fainting: raise the legs slightly and loosen tight clothes.</li>
+        <li>If bleeding: apply direct pressure with a clean cloth.</li>
+        <li>Inform the tour guide or trip manager immediately.</li>
+        <li>Keep a copy of passport and health insurance.</li>
+    </ol>
+</div>
+
+<!-- Case 2 -->
+<div class="card">
+    <h3>Fire in Hotel or Transportation</h3>
+    <ol>
+        <li>Activate the fire alarm immediately.</li>
+        <li>Use stairs only; do not use the elevator.</li>
+        <li>Cover your nose with a wet cloth.</li>
+        <li>Move low to avoid smoke inhalation.</li>
+        <li>Gather at the agreed evacuation point.</li>
+        <li>Count people to ensure everyone is out safely.</li>
+    </ol>
+</div>
+
+<!-- Case 3 -->
+<div class="card">
+    <h3>Lost Passport or Belongings</h3>
+    <ol>
+        <li>Report to local police immediately and file a report.</li>
+        <li>Contact your embassy to get a replacement travel document.</li>
+        <li>Contact the airline if you have a nearby flight.</li>
+        <li>Keep an electronic copy of your passport for easier processing.</li>
+    </ol>
+</div>
+
+<!-- Case 4 -->
+<div class="card">
+    <h3>Missing Tourist from the Group</h3>
+    <ol>
+        <li>Designate a clear meeting point in advance.</li>
+        <li>Try to contact the person immediately.</li>
+        <li>Wait at the agreed meeting point.</li>
+        <li>Inform security or management after 15–20 minutes.</li>
+        <li>Always keep the guide's number.</li>
+    </ol>
+</div>
+
+<!-- Case 5 -->
+<div class="card">
+    <h3>Traffic Accident During the Trip</h3>
+    <ol>
+        <li>Do not leave the scene unless in direct danger.</li>
+        <li>Call ambulance and police.</li>
+        <li>Provide first aid to victims until emergency services arrive.</li>
+        <li>Document the accident with photos if possible.</li>
+        <li>Inform the travel company immediately.</li>
+    </ol>
+</div>
+
+<!-- Case 6 -->
+<div class="card">
+    <h3>Natural Disasters (Flood – Earthquake – Storm)</h3>
+    <ol>
+        <li><b>Earthquake:</b> Take cover under a strong table, stay away from glass, avoid elevators, exit after shaking stops.</li>
+        <li><b>Storm or Flood:</b> Stay in a safe place, away from windows, avoid driving in accumulated water.</li>
+    </ol>
+</div>
+
+<!-- Case 7 -->
+<div class="card">
+    <h3>Theft or Assault</h3>
+    <ol>
+        <li>Do not resist to maintain safety.</li>
+        <li>Memorize the assailant's features if possible.</li>
+        <li>Move to a safe place immediately.</li>
+        <li>Report to police and embassy.</li>
+        <li>Stop bank cards immediately.</li>
+        <li>Preventive tips before any trip: take passport photo, know local emergency numbers, hotel address, carry a local SIM or internet package, inform a relative of travel plan.</li>
+    </ol>
+</div>
+
+<!-- Case 8 -->
+<div class="card">
+    <h3>Terrorist Attack (Shooting – Explosion – Hostage)</h3>
+    <ol>
+        <li><b>Shooting:</b> Escape immediately if possible; if not, hide in a closed place and lock the door, silence phone, avoid windows, do not record the event, follow security instructions.</li>
+        <li><b>Explosion:</b> Move away immediately, avoid crowds, check yourself and others for injuries, call ambulance.</li>
+        <li><b>Hostage Situation:</b> Stay calm, avoid direct eye contact, follow instructions without argument, memorize details quietly.</li>
+    </ol>
+</div>
+
+<!-- Case 9 -->
+<div class="card">
+    <h3>War or Armed Conflict in the Country</h3>
+    <ol>
+        <li>Stay inside the hotel or a safe place.</li>
+        <li>Follow embassy updates for your country.</li>
+        <li>Prepare a small emergency bag (passport, cash, phone, charger, basic meds).</li>
+        <li>Stay away from windows and open spaces.</li>
+        <li>Do not go out during curfew.</li>
+        <li>Contact travel company for evacuation arrangements if needed.</li>
+        <li>Register your name at the embassy for easier evacuation.</li>
+        <li>Suggested emergency bag: passport + copy, cash, phone + power bank, basic medications, small water bottle, small flashlight.</li>
+    </ol>
+</div>
+
+</div>
+</body>
+</html>

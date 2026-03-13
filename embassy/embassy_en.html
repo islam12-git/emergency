@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Embassy Contact Information</title>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600&display=swap" rel="stylesheet">
+<style>
+body{
+    margin:0;
+    font-family:Cairo;
+    background:linear-gradient(140deg,#0b2545,#134074,#1e6091,#3a86ff);
+    min-height:100vh;
+    padding:30px;
+    color:white;
+}
+
+/* Title */
+.title{
+    text-align:center;
+    font-size:34px;
+    margin-bottom:40px;
+    font-weight:600;
+}
+
+/* Grid */
+.container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(350px,1fr));
+    gap:25px;
+    max-width:1200px;
+    margin:auto;
+    width:100%;
+}
+
+/* Card */
+.card{
+    background:rgba(255,255,255,0.08);
+    backdrop-filter:blur(14px);
+    border-radius:20px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.3);
+    transition:.3s;
+    width:100%;
+    box-sizing:border-box;
+}
+
+.card:hover{
+    transform:translateY(-6px);
+    background:rgba(255,255,255,0.12);
+}
+
+/* Country Name */
+.country{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:15px;
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:20px;
+}
+
+/* Flag */
+.flag{
+    width:50px;
+    height:32px;
+    border-radius:5px;
+    object-fit:cover;
+    box-shadow:0 0 5px rgba(0,0,0,.3);
+}
+
+/* Info Section */
+.info{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+/* Row */
+.row{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    background:rgba(255,255,255,.05);
+    padding:12px;
+    border-radius:10px;
+    font-size:15px;
+}
+
+/* Icon */
+.icon{
+    width:20px;
+    height:20px;
+    flex-shrink:0;
+}
+
+/* Phone */
+.phone{
+    color:#9fd3ff;
+    text-decoration:none;
+    font-weight:600;
+}
+.phone:hover{
+    text-decoration:underline;
+}
+</style>
+</head>
+
+<body>
+
+<div class="title">Embassy Contact Information</div>
+
+<div class="container">
+
+<!-- Saudi Arabia -->
+<div class="card">
+<div class="country">
+<img class="flag" src="https://flagcdn.com/w80/sa.png">Saudi Arabia
+</div>
+<div class="info">
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+</svg>
+<span>2 Ahmed Nasim Street – Giza</span>
+</div>
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1C9.16 21 3 14.84 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.2 2.52.59 3.66a1 1 0 01-.21 1.11l-2.26 2.02z"/>
+</svg>
+<a class="phone" href="tel:0237749800">02 37749800</a>
+<span>/</span>
+<a class="phone" href="tel:0237744600">02 37744600</a>
+</div>
+</div>
+</div>
+
+<!-- Jordan -->
+<div class="card">
+<div class="country">
+<img class="flag" src="https://flagcdn.com/w80/jo.png">Jordan
+</div>
+<div class="info">
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+</svg>
+<span>6 Basem Al-Kateb Street – Dokki, Giza</span>
+</div>
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1C9.16 21 3 14.84 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.2 2.52.59 3.66a1 1 0 01-.21 1.11l-2.26 2.02z"/>
+</svg>
+<a class="phone" href="tel:02233354402">02 233354402</a>
+</div>
+</div>
+</div>
+
+<!-- Kuwait -->
+<div class="card">
+<div class="country">
+<img class="flag" src="https://flagcdn.com/w80/kw.png">Kuwait
+</div>
+<div class="info">
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+</svg>
+<span>Near Four Seasons Hotel – Giza</span>
+</div>
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1C9.16 21 3 14.84 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.2 2.52.59 3.66a1 1 0 01-.21 1.11l-2.26 2.02z"/>
+</svg>
+<a class="phone" href="tel:0235712187">02 35712187</a>
+<span>/</span>
+<a class="phone" href="tel:0235712194">02 35712194</a>
+</div>
+</div>
+</div>
+
+<!-- Oman -->
+<div class="card">
+<div class="country">
+<img class="flag" src="https://flagcdn.com/w80/om.png">Oman
+</div>
+<div class="info">
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/>
+</svg>
+<span>20 Mohamed Mazhar Street – Zamalek, Cairo</span>
+</div>
+<div class="row">
+<svg class="icon" viewBox="0 0 24 24" fill="#9fd3ff">
+<path d="M6.62 10.79a15.053 15.053 0 006.59 6.59l2.2-2.2a1 1 0 011.11-.21 11.72 11.72 0 003.66.59 1 1 0 011 1V20a1 1 0 01-1 1C9.16 21 3 14.84 3 7a1 1 0 011-1h3.5a1 1 0 011 1c0 1.27.2 2.52.59 3.66a1 1 0 01-.21 1.11l-2.26 2.02z"/>
+</svg>
+<a class="phone" href="tel:0227350792">02 27350792</a>
+<span>/</span>
+<a class="phone" href="tel:0227289971">02 27289971</a>
+</div>
+</div>
+</div>
+
+<!-- باقي السفارات يمكن اضافتها بنفس النمط -->
+</div>
+</body>
+</html>
