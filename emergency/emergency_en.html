@@ -95,6 +95,33 @@ body{
     line-height:1.5;
 }
 
+.audio-box{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.audio-btn{
+    width:40px;
+    height:40px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,0.4);
+    background:rgba(255,255,255,0.08);
+    color:white;
+    font-size:16px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:0.3s;
+    backdrop-filter:blur(5px);
+}
+
+.audio-btn:hover{
+    background:rgba(255,255,255,0.2);
+    transform:scale(1.1);
+}
+    
 /* Mobile */
 @media (max-width:768px){
     .title{
@@ -131,6 +158,18 @@ body{
         <li>Inform the tour guide or trip manager immediately.</li>
         <li>Keep a copy of passport and health insurance.</li>
     </ol>
+
+         <!-- مشغل الصوت -->
+    <div class="audio-box">
+
+        <button class="audio-btn play" onclick="playAudio(this)">▶</button>
+        <button class="audio-btn pause" onclick="pauseAudio(this)">⏸</button>
+    
+        <audio id="audio1" preload="auto">
+            <source src="../audio/e1.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
 </div>
 
 <!-- Case 2 -->
@@ -144,6 +183,17 @@ body{
         <li>Gather at the agreed evacuation point.</li>
         <li>Count people to ensure everyone is out safely.</li>
     </ol>
+         <!-- مشغل الصوت -->
+    <div class="audio-box">
+
+        <button class="audio-btn play" onclick="playAudio(this)">▶</button>
+        <button class="audio-btn pause" onclick="pauseAudio(this)">⏸</button>
+    
+        <audio id="audio1" preload="auto">
+            <source src="../audio/e2.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
 </div>
 
 <!-- Case 3 -->
@@ -155,6 +205,17 @@ body{
         <li>Contact the airline if you have a nearby flight.</li>
         <li>Keep an electronic copy of your passport for easier processing.</li>
     </ol>
+         <!-- مشغل الصوت -->
+    <div class="audio-box">
+
+        <button class="audio-btn play" onclick="playAudio(this)">▶</button>
+        <button class="audio-btn pause" onclick="pauseAudio(this)">⏸</button>
+    
+        <audio id="audio1" preload="auto">
+            <source src="../audio/e3.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
 </div>
 
 <!-- Case 4 -->
@@ -167,6 +228,17 @@ body{
         <li>Inform security or management after 15–20 minutes.</li>
         <li>Always keep the guide's number.</li>
     </ol>
+         <!-- مشغل الصوت -->
+    <div class="audio-box">
+
+        <button class="audio-btn play" onclick="playAudio(this)">▶</button>
+        <button class="audio-btn pause" onclick="pauseAudio(this)">⏸</button>
+    
+        <audio id="audio1" preload="auto">
+            <source src="../audio/e4.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
 </div>
 
 <!-- Case 5 -->
@@ -179,6 +251,17 @@ body{
         <li>Document the accident with photos if possible.</li>
         <li>Inform the travel company immediately.</li>
     </ol>
+         <!-- مشغل الصوت -->
+    <div class="audio-box">
+
+        <button class="audio-btn play" onclick="playAudio(this)">▶</button>
+        <button class="audio-btn pause" onclick="pauseAudio(this)">⏸</button>
+    
+        <audio id="audio1" preload="auto">
+            <source src="../audio/e5.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
 </div>
 
 <!-- Case 6 -->
@@ -188,6 +271,17 @@ body{
         <li><b>Earthquake:</b> Take cover under a strong table, stay away from glass, avoid elevators, exit after shaking stops.</li>
         <li><b>Storm or Flood:</b> Stay in a safe place, away from windows, avoid driving in accumulated water.</li>
     </ol>
+         <!-- مشغل الصوت -->
+    <div class="audio-box">
+
+        <button class="audio-btn play" onclick="playAudio(this)">▶</button>
+        <button class="audio-btn pause" onclick="pauseAudio(this)">⏸</button>
+    
+        <audio id="audio1" preload="auto">
+            <source src="../audio/e6.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
 </div>
 
 <!-- Case 7 -->
@@ -201,6 +295,17 @@ body{
         <li>Stop bank cards immediately.</li>
         <li>Preventive tips before any trip: take passport photo, know local emergency numbers, hotel address, carry a local SIM or internet package, inform a relative of travel plan.</li>
     </ol>
+         <!-- مشغل الصوت -->
+    <div class="audio-box">
+
+        <button class="audio-btn play" onclick="playAudio(this)">▶</button>
+        <button class="audio-btn pause" onclick="pauseAudio(this)">⏸</button>
+    
+        <audio id="audio1" preload="auto">
+            <source src="../audio/e7.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
 </div>
 
 <!-- Case 8 -->
@@ -211,6 +316,17 @@ body{
         <li><b>Explosion:</b> Move away immediately, avoid crowds, check yourself and others for injuries, call ambulance.</li>
         <li><b>Hostage Situation:</b> Stay calm, avoid direct eye contact, follow instructions without argument, memorize details quietly.</li>
     </ol>
+         <!-- مشغل الصوت -->
+    <div class="audio-box">
+
+        <button class="audio-btn play" onclick="playAudio(this)">▶</button>
+        <button class="audio-btn pause" onclick="pauseAudio(this)">⏸</button>
+    
+        <audio id="audio1" preload="auto">
+            <source src="../audio/e8.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
 </div>
 
 <!-- Case 9 -->
@@ -226,8 +342,41 @@ body{
         <li>Register your name at the embassy for easier evacuation.</li>
         <li>Suggested emergency bag: passport + copy, cash, phone + power bank, basic medications, small water bottle, small flashlight.</li>
     </ol>
+         <!-- مشغل الصوت -->
+    <div class="audio-box">
+
+        <button class="audio-btn play" onclick="playAudio(this)">▶</button>
+        <button class="audio-btn pause" onclick="pauseAudio(this)">⏸</button>
+    
+        <audio id="audio1" preload="auto">
+            <source src="../audio/e9.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
 </div>
 
 </div>
+<script>
+function playAudio(btn){
+    let box = btn.parentElement;
+    let audio = box.querySelector("audio");
+
+    // وقف أي صوت تاني
+    document.querySelectorAll("audio").forEach(a=>{
+        a.pause();
+        a.currentTime = 0;
+    });
+
+    audio.play().catch(err=>{
+        console.log("مشكلة تشغيل:", err);
+    });
+}
+
+function pauseAudio(btn){
+    let box = btn.parentElement;
+    let audio = box.querySelector("audio");
+    audio.pause();
+}
+</script>
 </body>
 </html>
